@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Estudiante</title>
+</head>
+<body>
+    <h1>Página del Estudiante</h1>
+    <button onclick="window.location.href='index.html'">Volver a Página Inicial</button>
+    <form action="guardar_respuestas.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cuenta">Número de Cuenta:</label>
+        <input type="text" id="cuenta" name="cuenta" required>
+
+        <h2>Preguntas:</h2>
+        <p>1. ¿1 + 1 = ?</p>
+        <input type="radio" name="p1" value="2"> 2
+        <input type="radio" name="p1" value="3"> 3
+        <input type="radio" name="p1" value="4"> 4
+
+        <!-- Añadir preguntas similares -->
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
